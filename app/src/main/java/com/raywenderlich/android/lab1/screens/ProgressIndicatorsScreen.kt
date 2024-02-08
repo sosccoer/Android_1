@@ -19,17 +19,4 @@ fun ProgressIndicatorScreen() {
 
     Column(
         modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        CircularProgressIndicator(
-            color = colorResource(id = androidx.compose.ui.R.color.vector_tint_theme_color),
-            strokeWidth = 5.dp
-        )
-        LinearProgressIndicator(progress = 0.5f)
-    }
-
-    BackButtonHandler {
-        FundamentalsRouter.navigateTo(Screen.Navigation)
-    }
-}
+        horizontalAlignment = Alignment.CenterHori
